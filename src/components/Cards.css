@@ -1,0 +1,112 @@
+.white-container {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.card-container {
+    width: 380px;
+    box-shadow: 0 0 20px rgb(241, 238, 238);
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    margin: 24px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.image-container img {
+    overflow: hidden;
+    height: 200px;
+    width: 700px;
+    transition: all 0.2s ease-in-out;
+    animation-name: fade-img;
+    animation-duration: 2s;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.cards-flexs {
+    display: flex;
+    justify-content: center;
+}
+
+.cards-h1 {
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold !important;
+    line-height: 28px;
+    text-align: center;
+    padding: 0 11px
+}
+
+.lorem {
+    text-align: left;
+    padding: 1.5em;
+}
+
+@media screen and (max-width: 1100px) {
+    .card-container {
+        width: 700px;
+        box-shadow: 0 0 20px rgb(237, 231, 231);
+        align-items: center;
+        height: fit-content;
+        margin: 20px auto;
+    }
+    .cards-flexs {
+        display: inline;
+        justify-content: center;
+    }
+    .image-container img {
+        overflow: hidden;
+        height: 500px;
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card-container {
+        width: 500px;
+        box-shadow: 0 0 20px rgb(237, 231, 231);
+        align-items: center;
+        height: fit-content;
+        margin: 20px auto;
+    }
+    .cards-flexs {
+        display: inline;
+        justify-content: center;
+    }
+    .image-container img {
+        overflow: hidden;
+        height: 300px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .card-container {
+        width: 340px;
+        box-shadow: 0 0 20px rgb(237, 231, 231);
+        align-items: center;
+        height: fit-content;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+    .cards-flexs {
+        display: inline;
+        justify-content: center;
+    }
+    .image-container img {
+        overflow: hidden;
+        height: 200px;
+        width: 340px;
+    }
+}

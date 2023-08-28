@@ -1,0 +1,19 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+.container {
+    min-width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #0c5554;
+    margin-bottom: 10vh;
+}
+
+#small {
+    text-align: justify;
+    text-transform: initial;
+    font-size: 15px;
+    font-weight: none;
+    color: rgb(0, 0, 0)
+}

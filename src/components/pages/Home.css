@@ -1,0 +1,69 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+.slider {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    min-width: 100%;
+    position: relative;
+    bottom: 18rem;
+}
+
+.carousel-image {
+    transition: opacity 4s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(50%);
+}
+
+.carousel-image.hide {
+    animation-name: fade-img;
+    animation-duration: 2s;
+}
+
+/*Not for use yet ok*/
+
+/* .right-arrow{ 
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.left-arrow{
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+} */
+
+.h1-container {
+    width: fit-content;
+    height: fit-content;
+    background-color: #0c5554;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 12px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
